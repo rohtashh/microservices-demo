@@ -8,10 +8,14 @@ spring:
           uri: https://github.com/rohtashh/spring-cloud-config-server-repository
           default-label: main
           username: rohtashh
-          password: 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
+          password: ENC(TDW++vvmW8wc8p2QLP4AzZ7UF17AuNRpVrFce6T5zqHUHncETSZWo6pCzFKgK6qQsTxeCCoLqoHcBqhxpBEYcAxegszecDjtNDL5TMstwCA=)
           clone-on-start: true
     fail-fast: true
   security:
     user:
       name: spring_cloud_user
-      password: springCloud_Pwd!
+      password: ENC(JN7L/1okd35oJVzhTJ36wmj0k/TixvcXxbpC444eQzni9hwDPqVC89UKBLFfaNVPVeedmYP6M6F4GzFjULEVdg==)
+
+jasypt:
+  encryptor:
+    password: ${JASYPT_ENCRYPTOR_PASSWORD}
